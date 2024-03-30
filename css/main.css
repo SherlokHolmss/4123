@@ -282,6 +282,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 8px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    max-width: none;
     padding-top: 94px;
     padding-bottom: 94px;
     padding-left: 0;
