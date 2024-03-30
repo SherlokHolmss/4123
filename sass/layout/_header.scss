@@ -1,0 +1,123 @@
+body{
+    padding-top: 60px;
+}
+.header {
+    background-color: $color-footer-info;
+    padding: 16px 0;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+
+    &-logo {
+        @include fontstyles(Roboto, 24px, 700, 1.1, 0.03em, left, $color-black);
+
+        @include tab(768px) {
+            @include fontstyles(Roboto, 26px, 700, 1.1, 0.03em, left, $color-black);
+        }
+    }
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.burger-menu {
+    margin-left: auto;
+    background-color: inherit;
+
+    @include tab(768px) {
+        display: none;
+    }
+}
+
+.contacts-list {
+    display: none;
+
+    @include tab(768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    @include desc(1200px){
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &-item {
+        @include fontstyles(Roboto, 14px, 500, 16px, 0.02em, left, $color-p);
+
+        .contacts-list-link {
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover {
+                @extend %hover-element;
+            }
+        }
+
+    }
+
+    &-link {
+        color: #757575;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.41px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    }
+
+    &-link-svg {
+        color: currentColor;
+
+        &-use {
+            fill: #757575;
+        }
+    }
+
+}
+
+.navigation-list {
+    display: none;
+    margin-right: 90px;
+    @include tab(768px) {
+        display: flex;
+        gap: 50px;
+        margin-left: 88px;
+    }
+
+    @include desc(1200px) {
+        margin-left: 93px;
+        margin-right: 315px;
+    }
+
+    &-item {
+        @include fontstyles(Roboto, 14px, 500, 16px, 0.02em, left, $color-p);
+
+        &-link {
+            @include fontstyles(Raleway, 14px, 500, 16px, 0.03em, left, $color-black);
+        }
+
+        &-link-current {
+            position: relative;
+            font-family: Roboto;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 48px;
+                height: 4px;
+                border-radius: 2px;
+                margin-bottom: -22px;
+                background-color: $color-blue;
+            }
+        }
+    }
+}
