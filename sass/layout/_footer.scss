@@ -151,13 +151,19 @@
     letter-spacing: 0.06em;
     color: $color-section-hero;
 }
-
-.address-list-link {
+.address-list-item-link{
     font-size: 14px;
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.03em;
     text-align: left;
     color: $color-footer-info;
-    text-decoration: none;
+}
+.address-list-link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.6);
 }

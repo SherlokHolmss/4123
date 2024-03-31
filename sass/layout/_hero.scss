@@ -13,7 +13,9 @@
     border-radius: 4px;
 
 }
-
+.portfolio-list-wrap{
+    padding: 20px 24px;
+}
 .filter-list {
     display: flex;
     gap: 15px 8px;
@@ -39,7 +41,6 @@
     line-height: 36px;
     letter-spacing: 0.06em;
     text-align: left;
-    padding: 0 24px 4px 24px;
 }
 
 .section-hero {
@@ -79,5 +80,4 @@
     line-height: 30px;
     letter-spacing: 0.03em;
     text-align: left;
-    padding: 0 24px 0 24px;
 }
