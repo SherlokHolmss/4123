@@ -57,7 +57,7 @@
                         <a href="tel:+380961111111" class="contacts-list-item">+380961111111</a>
                     </li>
                 </ul>
-                <button class="burger-menu">
+                <button class="burger-menu" data-modal-open>
                     <svg class="burger-menu-icon" width="24" height="16">
                         <use href="./img/symbol-defs.svg#burger-menu"></use>
                     </svg>
@@ -91,7 +91,18 @@
                         <a href="#" class="portfolio-list-link">
                             <div class="overlay">
                                 <div class="overlay-wrap">
-                                    <img src="./img/first.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    <picture>
+                                        <source media="(min-width:1200px)"
+                                            srcset="./img/first.jpg 1x, ./img/2x-desc-portfolio-first.jpg 2x , ./img/3x-desc-portfolio-first.jpg 3x"
+                                            type="image/jpeg" />
+                                        <source media="(min-width:768px)"
+                                            srcset="./img/tab-portfolio-first.jpg 1x, ./img/2x-tab-portfolio-first.jpg 2x, ./img/3x-tab-portfolio-first.jpg 3x"
+                                            type="image/jpge">
+                                        <source media="(max-width:768px)"
+                                            srcset="./img/mob-portfolio-first.jpg 1x, ./img/2x-mob-portfolio-first.jpg 2x,  ./img/3x-mob-portfolio-first.jpg 3x"
+                                            type="image/jpeg">
+                                        <img src="./img/first.jpg" alt="упс" class="portfolio-list-img">
+                                    </picture>
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та
                                         сервісів. Все це
@@ -111,7 +122,18 @@
                         <a href="#" class="portfolio-list-link">
                             <div class="overlay">
                                 <div class="overlay-wrap">
-                                    <img src="./img/second.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    <picture>
+                                        <source media="(min-width:1200px)"
+                                            srcset="./img/second.jpg 1x, ./img/2x-desc-portfolio-second.jpg 2x , ./img/3x-desc-portfolio-second.jpg 3x"
+                                            type="image/jpeg" />
+                                        <source media="(min-width:768px)"
+                                            srcset="./img/tab-portfolio-second.jpg 1x, ./img/2x-tab-portfolio-second.jpg 2x, ./img/3x-tab-portfolio-second.jpg 3x"
+                                            type="image/jpge">
+                                        <source media="(max-width:768px)"
+                                            srcset="./img/mob-portfolio-second.jpg 1x, ./img/2x-mob-portfolio-second.jpg 2x,  ./img/3x-mob-portfolio-second.jpg 3x"
+                                            type="image/jpeg">
+                                        <img src="./img/second.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    </picture>
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та
                                         сервісів. Все це
@@ -131,7 +153,18 @@
                         <a href="#" class="portfolio-list-link">
                             <div class="overlay">
                                 <div class="overlay-wrap">
-                                    <img src="./img/third.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    <picture>
+                                        <source media="(min-width:1200px)"
+                                            srcset="./img/third.jpg 1x, ./img/2x-desc-portfolio-third.jpg 2x , ./img/3x-desc-portfolio-third.jpg 3x"
+                                            type="image/jpeg" />
+                                        <source media="(min-width:768px)"
+                                            srcset="./img/tab-portfolio-third.jpg 1x, ./img/2x-tab-portfolio-third.jpg 2x, ./img/3x-tab-portfolio-third.jpg 3x"
+                                            type="image/jpge">
+                                        <source media="(max-width:768px)"
+                                            srcset="./img/mob-portfolio-third.jpg 1x, ./img/2x-mob-portfolio-third.jpg 2x,  ./img/3x-mob-portfolio-third.jpg 3x"
+                                            type="image/jpeg">
+                                        <img src="./img/third.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    </picture>
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та
                                         сервісів. Все це
@@ -150,7 +183,18 @@
                         <a href="#" class="portfolio-list-link">
                             <div class="overlay">
                                 <div class="overlay-wrap">
-                                    <img src="./img/fourth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    <picture>
+                                        <source media="(min-width:1200px)"
+                                            srcset="./img/fourth.jpg 1x, ./img/2x-desc-portfolio-fourth.jpg 2x , ./img/3x-desc-portfolio-fourth.jpg 3x"
+                                            type="image/jpeg" />
+                                        <source media="(min-width:768px)"
+                                            srcset="./img/tab-portfolio-fourth.jpg 1x, ./img/2x-tab-portfolio-fourth.jpg 2x, ./img/3x-tab-portfolio-fourth.jpg 3x"
+                                            type="image/jpge">
+                                        <source media="(max-width:768px)"
+                                            srcset="./img/mob-portfolio-fourth.jpg 1x, ./img/2x-mob-portfolio-fourth.jpg 2x,  ./img/3x-mob-portfolio-fourth.jpg 3x"
+                                            type="image/jpeg">
+                                        <img src="./img/fourth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    </picture>
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та
                                         сервісів. Все це
@@ -170,7 +214,18 @@
                         <a href="#" class="portfolio-list-link">
                             <div class="overlay">
                                 <div class="overlay-wrap">
-                                    <img src="./img/fifth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    <picture>
+                                        <source media="(min-width:1200px)"
+                                            srcset="./img/fifth.jpg 1x, ./img/2x-desc-portfolio-fifth.jpg 2x , ./img/3x-desc-portfolio-fifth.jpg 3x"
+                                            type="image/jpeg" />
+                                        <source media="(min-width:768px)"
+                                            srcset="./img/tab-portfolio-fifth.jpg 1x, ./img/2x-tab-portfolio-fifth.jpg 2x, ./img/3x-tab-portfolio-fifth.jpg 3x"
+                                            type="image/jpge">
+                                        <source media="(max-width:768px)"
+                                            srcset="./img/mob-portfolio-fifth.jpg 1x, ./img/2x-mob-portfolio-fifth.jpg 2x,  ./img/3x-mob-portfolio-fifth.jpg 3x"
+                                            type="image/jpeg">
+                                        <img src="./img/fifth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    </picture>
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та
                                         сервісів. Все це
@@ -189,7 +244,18 @@
                         <a href="#" class="portfolio-list-link">
                             <div class="overlay">
                                 <div class="overlay-wrap">
-                                    <img src="./img/sixth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    <picture>
+                                        <source media="(min-width:1200px)"
+                                            srcset="./img/sixth.jpg 1x, ./img/2x-desc-portfolio-sixth.jpg 2x , ./img/3x-desc-portfolio-sixth.jpg 3x"
+                                            type="image/jpeg" />
+                                        <source media="(min-width:768px)"
+                                            srcset="./img/tab-portfolio-sixth.jpg 1x, ./img/2x-tab-portfolio-sixth.jpg 2x, ./img/3x-tab-portfolio-sixth.jpg 3x"
+                                            type="image/jpge">
+                                        <source media="(max-width:768px)"
+                                            srcset="./img/mob-portfolio-sixth.jpg 1x, ./img/2x-mob-portfolio-sixth.jpg 2x,  ./img/3x-mob-portfolio-sixth.jpg 3x"
+                                            type="image/jpeg">
+                                        <img src="./img/sixth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    </picture>
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та
                                         сервісів. Все це
@@ -210,7 +276,18 @@
                         <a href="#" class="portfolio-list-link">
                             <div class="overlay">
                                 <div class="overlay-wrap">
-                                    <img src="./img/seventh.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    <picture>
+                                        <source media="(min-width:1200px)"
+                                            srcset="./img/seventh.jpg 1x, ./img/2x-desc-portfolio-seventh.jpg 2x , ./img/3x-desc-portfolio-seventh.jpg 3x"
+                                            type="image/jpeg" />
+                                        <source media="(min-width:768px)"
+                                            srcset="./img/tab-portfolio-seventh.jpg 1x, ./img/2x-tab-portfolio-seventh.jpg 2x, ./img/3x-tab-portfolio-seventh.jpg 3x"
+                                            type="image/jpge">
+                                        <source media="(max-width:768px)"
+                                            srcset="./img/mob-portfolio-seventh.jpg 1x, ./img/2x-mob-portfolio-seventh.jpg 2x,  ./img/3x-mob-portfolio-seventh.jpg 3x"
+                                            type="image/jpeg">
+                                        <img src="./img/seventh.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    </picture>
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та
                                         сервісів. Все це
@@ -230,7 +307,19 @@
                         <a href="#" class="portfolio-list-link">
                             <div class="overlay">
                                 <div class="overlay-wrap">
-                                    <img src="./img/eighth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    <picture>
+                                        <source media="(min-width:1200px)"
+                                            srcset="./img/eighth.jpg 1x, ./img/2x-desc-portfolio-eighth.jpg 2x , ./img/3x-desc-portfolio-eighth.jpg 3x"
+                                            type="image/jpeg" />
+                                        <source media="(min-width:768px)"
+                                            srcset="./img/tab-portfolio-eighth.jpg 1x, ./img/2x-tab-portfolio-eighth.jpg 2x, ./img/3x-tab-portfolio-eighth.jpg 3x"
+                                            type="image/jpge">
+                                        <source media="(max-width:768px)"
+                                            srcset="./img/mob-portfolio-eighth.jpg 1x, ./img/2x-mob-portfolio-eighth.jpg 2x,  ./img/3x-mob-portfolio-eighth.jpg 3x"
+                                            type="image/jpeg">
+                                        <img src="./img/eighth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    </picture>
+
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та
                                         сервісів. Все це
@@ -250,7 +339,18 @@
                         <a href="#" class="portfolio-list-link">
                             <div class="overlay">
                                 <div class="overlay-wrap">
-                                    <img src="./img/ninth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    <picture>
+                                        <source media="(min-width:1200px)"
+                                            srcset="./img/ninth.jpg 1x, ./img/2x-desc-portfolio-ninth.jpg 2x , ./img/3x-desc-portfolio-ninth.jpg 3x"
+                                            type="image/jpeg" />
+                                        <source media="(min-width:768px)"
+                                            srcset="./img/tab-portfolio-ninth.jpg 1x, ./img/2x-tab-portfolio-ninth.jpg 2x, ./img/3x-tab-portfolio-ninth.jpg 3x"
+                                            type="image/jpge">
+                                        <source media="(max-width:768px)"
+                                            srcset="./img/mob-portfolio-ninth.jpg 1x, ./img/2x-mob-portfolio-ninth.jpg 2x,  ./img/3x-mob-portfolio-ninth.jpg 3x"
+                                            type="image/jpeg">
+                                        <img src="./img/ninth.jpg" alt="упс" width="200" class="portfolio-list-img">
+                                    </picture>
                                     <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем
                                         функціоналу та
                                         сервісів. Все це
